@@ -106,6 +106,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ContractFunctions.cs" />
     <Compile Include="DAL\UserFunctions.cs" />
     <Compile Include="Model\Configurations\ContractConfig.cs" />
     <Compile Include="Model\Configurations\UserConfig.cs" />
