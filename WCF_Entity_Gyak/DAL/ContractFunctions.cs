@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WCF_Entity_Gyak.Model;
+using WCF_Entity_Gyak.DAL;
 
 namespace WCF_Entity_Gyak.DAL
 {
@@ -44,6 +45,18 @@ namespace WCF_Entity_Gyak.DAL
                 db.Contracts.Add(contract);
             }
             return true;
+        }
+
+        public double CalculateInsurancePrice(int landId, int contractId)
+        {
+            //rights?
+            Contract contract = GetContractById(contractId);
+            Land land = LandFunctions.GetLandById(landId);
+            //some bullshit logic
+            
+            double price = land.PricePerSquareMeters * land.LocationPriceModifier * land.Size*land.Grain.Price;
+            // ha enummal csináltam volna: Land.GrainType grainType = Land.GrainType.Barley;
+            return price;
         }
     }
 }

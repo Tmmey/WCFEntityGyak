@@ -107,11 +107,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\ContractFunctions.cs" />
+    <Compile Include="DAL\GrainFunctions.cs" />
+    <Compile Include="DAL\LandFunctions.cs" />
     <Compile Include="DAL\UserFunctions.cs" />
     <Compile Include="Model\Configurations\ContractConfig.cs" />
+    <Compile Include="Model\Configurations\GrainConfig.cs" />
+    <Compile Include="Model\Configurations\LandConfig.cs" />
     <Compile Include="Model\Configurations\UserConfig.cs" />
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="Model\Contract.cs" />
+    <Compile Include="Model\Grain.cs" />
+    <Compile Include="Model\Land.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
@@ -120,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Misc\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

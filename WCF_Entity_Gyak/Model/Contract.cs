@@ -11,6 +11,19 @@ namespace WCF_Entity_Gyak.Model
         public int Id { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime ContractCreationDate { get; set; }
+        public List<Land> Lands { get; set; }
+        public enum InsuranceType
+        {
+            Storm,
+            Fire,
+            Ice,
+            Drought,
+            Full
+        };
 
+        public Contract()
+        {
+            Lands = new List<Land>();
+        }
     }
 }

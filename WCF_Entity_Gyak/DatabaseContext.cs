@@ -24,6 +24,7 @@ namespace WCF_Entity_Gyak
 
         public DbSet<User> Users { get; set; }
         public DbSet<Contract> Contracts { get; set; }
-
+        public DbSet<Land> Lands { get; set; }
+        public DbSet<Grain> Grains { get; set; }
     }
 }
