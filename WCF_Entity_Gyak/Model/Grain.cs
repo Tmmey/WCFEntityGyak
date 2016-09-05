@@ -15,5 +15,7 @@ namespace WCF_Entity_Gyak.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+        [Required]
+        public Land Land { get; set; }
     }
 }

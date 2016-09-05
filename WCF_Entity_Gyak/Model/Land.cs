@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -14,13 +15,8 @@ namespace WCF_Entity_Gyak.Model
         public double LocationPriceModifier { get; set; }
         public string OwnerName { get; set; }
         public string BureauNumber { get; set; }
+        [Required]
+        public Contract Contract { get; set; }
         public Grain Grain{ get; set; }
-        public enum GrainType
-        {
-            Wheat,
-            Rye,
-            Barley,
-            Corn
-        }
     }
 }

@@ -21,11 +21,16 @@ namespace WCF_Entity_Gyak
     {
         //private DataBaseContext _db;
         private UserFunctions _userFunction;
+        private ContractFunctions _contractFunctions;
+        private LandFunctions _landFunctions;
+        private GrainFunctions _grainFunctions;
         public Service1()
         {
             //_db = new DataBaseContext();
             _userFunction = new UserFunctions();
-            
+            _contractFunctions = new ContractFunctions();
+            _landFunctions = new LandFunctions();
+            _grainFunctions = new GrainFunctions();
         }
 
         [OperationContract]
@@ -70,13 +75,31 @@ namespace WCF_Entity_Gyak
         {
             try
             {
-                return _userFunction.GetUserById(id);
+                return UserFunctions.GetUserById(id);
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
+        }
+
+        [OperationContract]
+        public bool AddContract(int userId,string startDate)
+        {
+            DateTime sDate;
+            DateTime.TryParseExact(startDate, "yyyy/MM/dd", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AdjustToUniversal, out sDate);
+            try
+            {
+                _contractFunctions.AddContract(userId, DateTime.Now, sDate);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return true;
         }
     }
 }

@@ -38,11 +38,16 @@ namespace WCF_Entity_Gyak.DAL
             Contract contract = new Contract
             {
                 ContractCreationDate = Convert.ToDateTime(contractCreationDate),
-                StartDate = Convert.ToDateTime(startDate)
+                StartDate = Convert.ToDateTime(startDate),
+                User = UserFunctions.GetUserById(userId)
             };
+
             using (DataBaseContext db = new DataBaseContext())
             {
+                db.Contracts.Attach(contract);
                 db.Contracts.Add(contract);
+                //db.Entry(UserFunctions.GetUserById(userId)).State = System.Data.Entity.EntityState.Unchanged;
+                db.SaveChanges();
             }
             return true;
         }

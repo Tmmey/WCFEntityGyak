@@ -42,7 +42,7 @@ namespace WCF_Entity_Gyak.DAL
             return users;
         }
 
-        public User GetUserById(int userId)
+        public static User GetUserById(int userId)
         {
             User user;
             using (DataBaseContext db = new DataBaseContext())
