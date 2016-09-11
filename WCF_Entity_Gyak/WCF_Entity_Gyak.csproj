@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="DAL\ContractFunctions.cs" />
     <Compile Include="DAL\GrainFunctions.cs" />
+    <Compile Include="DAL\InsuranceFunctions.cs" />
     <Compile Include="DAL\LandFunctions.cs" />
     <Compile Include="DAL\UserFunctions.cs" />
     <Compile Include="Model\Configurations\ContractConfig.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Model\Configurations\UserConfig.cs" />
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="Model\Contract.cs" />
+    <Compile Include="Model\DamageType.cs" />
     <Compile Include="Model\Grain.cs" />
     <Compile Include="Model\Insurance.cs" />
     <Compile Include="Model\Land.cs" />

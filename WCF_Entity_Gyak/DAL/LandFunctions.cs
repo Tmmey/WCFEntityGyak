@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Web;
 using WCF_Entity_Gyak.Model;
 
@@ -45,7 +46,9 @@ namespace WCF_Entity_Gyak.DAL
             };
             using (DataBaseContext db = new DataBaseContext())
             {
+                db.Lands.Attach(land);
                 db.Lands.Add(land);
+                db.SaveChanges();
             }
             return true;
         }

@@ -95,7 +95,6 @@ namespace WCF_Entity_Gyak
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
 

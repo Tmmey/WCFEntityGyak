@@ -24,6 +24,7 @@ namespace WCF_Entity_Gyak.DAL
 
             using (DataBaseContext db = new DataBaseContext())
             {
+                db.Users.Attach(user);
                 db.Users.Add(user);
                 db.SaveChanges();
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using WCF_Entity_Gyak.Model;
@@ -40,6 +41,12 @@ namespace WCF_Entity_Gyak.DAL
                 Name = name,
                 Price = price
             };
+            using (var db = new DataBaseContext())
+            {
+                db.Grains.Attach(grain);
+                db.Grains.Add(grain);
+                db.SaveChanges();
+            }
             return true;
         }
     }
