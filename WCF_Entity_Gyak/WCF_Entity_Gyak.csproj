@@ -111,6 +111,16 @@
     <Compile Include="DAL\InsuranceFunctions.cs" />
     <Compile Include="DAL\LandFunctions.cs" />
     <Compile Include="DAL\UserFunctions.cs" />
+    <Compile Include="Migrations\201609111820414_TestValues.cs" />
+    <Compile Include="Migrations\201609111820414_TestValues.Designer.cs">
+      <DependentUpon>201609111820414_TestValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Configurations\DamageTypeConfig.cs" />
+    <Compile Include="Migrations\201609111711368_Initial.cs" />
+    <Compile Include="Migrations\201609111711368_Initial.Designer.cs">
+      <DependentUpon>201609111711368_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
     <Compile Include="Model\Configurations\ContractConfig.cs" />
     <Compile Include="Model\Configurations\GrainConfig.cs" />
     <Compile Include="Model\Configurations\InsuranceConfig.cs" />
@@ -140,6 +150,14 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201609111711368_Initial.resx">
+      <DependentUpon>201609111711368_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609111820414_TestValues.resx">
+      <DependentUpon>201609111820414_TestValues.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -22,10 +22,9 @@ namespace WCF_Entity_Gyak
             modelBuilder.Configurations.Add(new LandConfig());
             modelBuilder.Configurations.Add(new GrainConfig());
             modelBuilder.Configurations.Add(new InsuranceConfig());
+            modelBuilder.Configurations.Add(new DamageTypeConfig());
 
             modelBuilder.Entity<Contract>().HasRequired<User>(t => t.User).WithMany(s => s.Contracts);
-
-            
 
             base.OnModelCreating(modelBuilder);
         }
@@ -35,5 +34,6 @@ namespace WCF_Entity_Gyak
         public DbSet<Land> Lands { get; set; }
         public DbSet<Grain> Grains { get; set; }
         public DbSet<Insurance> Insurances { get; set; }
+        public DbSet<DamageType> DamageTypes { get; set; }
     }
 }
