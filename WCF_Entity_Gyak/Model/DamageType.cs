@@ -9,7 +9,7 @@ namespace WCF_Entity_Gyak.Model
     public class DamageType
     {
         public int Id { get; set; }
-        public string  DamageName { get; set; }
+        public string  Name { get; set; }
         public double Value { get; set; }      
     }
 }
