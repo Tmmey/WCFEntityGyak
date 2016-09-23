@@ -1,0 +1,88 @@
+2016-09-23 11:12:27,969 | DEBUG | WCF_Entity_Gyak.Misc.LogManager | AddContract exception 
+System.Data.Entity.Infrastructure.DbUpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected. ---> System.Data.Entity.Core.UpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected.
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.RelationshipConstraintValidator.ValidateConstraints()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ProduceCommands()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WCF_Entity_Gyak.DAL.ContractFunctions.AddContract(Int32 userId, Nullable`1 contractCreationDate, Nullable`1 startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\DAL\ContractFunctions.cs:line 50
+   at WCF_Entity_Gyak.Service1.AddContract(Int32 userId, String startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\Service1.svc.cs:line 95
+2016-09-23 11:16:26,728 | DEBUG | WCF_Entity_Gyak.Misc.LogManager | AddContract exception 
+System.Data.Entity.Infrastructure.DbUpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected. ---> System.Data.Entity.Core.UpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected.
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.RelationshipConstraintValidator.ValidateConstraints()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ProduceCommands()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WCF_Entity_Gyak.DAL.ContractFunctions.AddContract(Int32 userId, Nullable`1 contractCreationDate, Nullable`1 startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\DAL\ContractFunctions.cs:line 50
+   at WCF_Entity_Gyak.Service1.AddContract(Int32 userId, String startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\Service1.svc.cs:line 95
+2016-09-23 11:58:15,668 | DEBUG | WCF_Entity_Gyak.Misc.LogManager | AddContract exception 
+System.Data.Entity.Infrastructure.DbUpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected. ---> System.Data.Entity.Core.UpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected.
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.RelationshipConstraintValidator.ValidateConstraints()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ProduceCommands()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WCF_Entity_Gyak.DAL.ContractFunctions.AddContract(Int32 userId, Nullable`1 contractCreationDate, Nullable`1 startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\DAL\ContractFunctions.cs:line 50
+   at WCF_Entity_Gyak.Service1.AddContract(Int32 userId, String startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\Service1.svc.cs:line 95
+2016-09-23 11:59:27,788 | DEBUG | WCF_Entity_Gyak.Misc.LogManager | AddContract exception 
+System.Data.Entity.Infrastructure.DbUpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected. ---> System.Data.Entity.Core.UpdateException: Entities in 'DataBaseContext.Contracts' participate in the 'Contract_User' relationship. 0 related 'Contract_User_Target' were found. 1 'Contract_User_Target' is expected.
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.RelationshipConstraintValidator.ValidateConstraints()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ProduceCommands()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WCF_Entity_Gyak.DAL.ContractFunctions.AddContract(Int32 userId, Nullable`1 contractCreationDate, Nullable`1 startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\DAL\ContractFunctions.cs:line 50
+   at WCF_Entity_Gyak.Service1.AddContract(Int32 userId, String startDate) in C:\Users\juhaszd\Source\Repos\WCFEntityGyak\WCF_Entity_Gyak\Service1.svc.cs:line 95

@@ -10,6 +10,7 @@ using WCF_Entity_Gyak.Model;
 using System.Net;
 using System.ServiceModel.Activation;
 using WCF_Entity_Gyak.DAL;
+using log4net;
 
 namespace WCF_Entity_Gyak
 {
@@ -95,7 +96,9 @@ namespace WCF_Entity_Gyak
             }
             catch (Exception ex)
             {
-                throw ex;
+                //throw ex;
+                Misc.LogManager.Log.Debug("AddContract exception ", ex);
+                return false;
             }
 
             return true;
